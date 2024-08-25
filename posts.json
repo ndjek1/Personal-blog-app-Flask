@@ -1,0 +1,20 @@
+[
+    {
+        "title": "First day of internship",
+        "content": "The error you're encountering is because the main blueprint isn't being referenced correctly in the url_for function. In Jinja2 templates, you need to reference blueprint names as strings.",
+        "date_posted": "2024-08-25T10:18:28.149383",
+        "image": null
+    },
+    {
+        "title": "Second day of internship",
+        "content": "It was fun , we dead some introductory things and got started with some project",
+        "date_posted": "2024-08-25T10:28:37.203158",
+        "image": null
+    },
+    {
+        "title": "Third day of internship ",
+        "content": "Getting to now the env ironment and at bthe same timne working on the project",
+        "date_posted": "2024-08-25T10:36:15.815687",
+        "image": "fd720ded0dd7e63c.png"
+    }
+]
