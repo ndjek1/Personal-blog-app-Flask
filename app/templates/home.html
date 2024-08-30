@@ -3,7 +3,7 @@
 {% block content %}
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="container">
-  <section class="bg-light py-5">
+  <section class="bg-light py-2 mt-5 mb-5">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -14,8 +14,8 @@
         {% for post in posts %}
         <div class="col-md-6 col-xl-4">
           <div class="image-box image-box--shadowed white-bg style-2 mb-4">
-            <div class="overlay-container">
-              <img src="{{ url_for('static', filename='post_pics/' + post.image) if post.image else url_for('static', filename='post_pics/default.jpg') }}"  alt="{{ post.title }}">
+            <div class="overlay-container" style="height: 150px; width: 100%;">
+              <img src="{{ url_for('static', filename='post_pics/' + post.image) if post.image else url_for('static', filename='post_pics/default.jpg') }}" class="card-img-top" alt="{{ post.title }}">
               <a href="" class="overlay-link"></a>
             </div>
             <div class="body">
@@ -31,7 +31,7 @@
                   </ul>
                 </div>
                 <div class="col-6 text-right">
-                  <a href="" class="btn radius-50 btn-gray-transparent btn-animated">Read More <i class="fa fa-arrow-right"></i></a>
+                  <a href="{{ url_for('main.post', post_id=post.id) }}" class="btn radius-50 btn-gray-transparent btn-animated">Read More <i class="fa fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>

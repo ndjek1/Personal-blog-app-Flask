@@ -1,20 +1,16 @@
 [
     {
-        "title": "First day of internship",
-        "content": "The error you're encountering is because the main blueprint isn't being referenced correctly in the url_for function. In Jinja2 templates, you need to reference blueprint names as strings.",
-        "date_posted": "2024-08-25T10:18:28.149383",
-        "image": null
+        "id": "dcf2443a-76c2-46fe-9c74-e90992728c69",
+        "title": "Second edited",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis lacus ac semper viverra. Etiam consequat odio sollicitudin metus condimentum, quis hendrerit erat adipiscing. Cras non turpis ut eros varius laoreet a ut felis. Aliquam sodales, purus pulvinar tincidunt congue, elit mauris sodales nisl, consequat iaculis urna enim in lectus. Proin at ornare lacus.",
+        "date_posted": "2024-08-30T10:49:28.335664",
+        "image": "c4e8c4b028354eea.jpeg"
     },
     {
-        "title": "Second day of internship",
-        "content": "It was fun , we dead some introductory things and got started with some project",
-        "date_posted": "2024-08-25T10:28:37.203158",
-        "image": null
-    },
-    {
-        "title": "Third day of internship ",
-        "content": "Getting to now the env ironment and at bthe same timne working on the project",
-        "date_posted": "2024-08-25T10:36:15.815687",
-        "image": "fd720ded0dd7e63c.png"
+        "id": "9113b031-8834-4a4f-af48-56a3738a2a75",
+        "title": "Third",
+        "content": "Images in Bootstrap are made responsive with .img-fluid. This applies max-width: 100%; and height: auto; to the image so that it scales with the parent width.",
+        "date_posted": "2024-08-30T10:51:00.941617",
+        "image": "955bd49a362fa232.jpeg"
     }
 ]
