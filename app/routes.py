@@ -96,10 +96,12 @@ def generate_unique_id():
 @main.route("/post/<string:post_id>")
 def post(post_id):
     post = None
+    latest_post = None
     try:
         # Load the specific post by ID
         with open(POSTS_FILE, 'r') as json_file:
             posts = json.load(json_file)
+            latest_post = posts[-4:-1]
             for p in posts:
                 if p['id'] == post_id:
                     post = p
@@ -111,7 +113,7 @@ def post(post_id):
         flash('Post not found.', 'danger')
         return redirect(url_for('main.home'))
 
-    return render_template('article.html', title=post['title'], post=post)
+    return render_template('article.html', title=post['title'], post=post, latest_post= latest_post)
 
 
 @main.route('/delete/<string:post_id>', methods=['POST','GET'])

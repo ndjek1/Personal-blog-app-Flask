@@ -12,5 +12,26 @@
         "content": "Images in Bootstrap are made responsive with .img-fluid. This applies max-width: 100%; and height: auto; to the image so that it scales with the parent width.",
         "date_posted": "2024-08-30T10:51:00.941617",
         "image": "955bd49a362fa232.jpeg"
+    },
+    {
+        "id": "6f9d6543-04b5-4a5c-86fd-38d2eadf4841",
+        "title": "Welcome to all things Fantasy!",
+        "content": "Hi everyone! My name is Alis and this is a personal fantasy fiction blog which will feature weekly reflections, insights, and",
+        "date_posted": "2024-08-31T06:49:13.246468",
+        "image": "c106529ec68bf65d.jpeg"
+    },
+    {
+        "id": "5a507753-c62e-4708-8345-8d8f23528088",
+        "title": "Twisted kaleidoscope",
+        "content": "This blog is dedicated to analyzing films from all sides, exploring their nuances, and twisting the kaleidoscope on queer theory in film.",
+        "date_posted": "2024-08-31T06:51:00.022697",
+        "image": "49af5626eea55701.jpeg"
+    },
+    {
+        "id": "23eb8bf1-3559-442c-bc98-28f8b6564849",
+        "title": "Rings of Nature",
+        "content": "The Image above shows how harsh and cruel the world can be as the stump has withered away. But within we can see the rings exposing the years the tree has withstood.\r\n\r\n",
+        "date_posted": "2024-08-31T06:52:14.195363",
+        "image": "cdde60fa3b1a5977.jpeg"
     }
 ]
