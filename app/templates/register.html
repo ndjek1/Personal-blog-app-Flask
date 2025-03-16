@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Registration Form -->
+    <form method="POST" action="{{ url_for('auth.register') }}">
+        {{ form.hidden_tag() }}
+
+        <div class="fadeIn second">
+            {{ form.username(class="form-control", placeholder="Username") }}
+            {% if form.username.errors %}
+                <small class="text-danger">{{ form.username.errors[0] }}</small>
+            {% endif %}
+        </div>
+
+        <div class="fadeIn third">
+            {{ form.email(class="form-control", placeholder="Email") }}
+            {% if form.email.errors %}
+                <small class="text-danger">{{ form.email.errors[0] }}</small>
+            {% endif %}
+        </div>
+
+        <div class="fadeIn third">
+            {{ form.password(class="form-control", placeholder="Password") }}
+            {% if form.password.errors %}
+                <small class="text-danger">{{ form.password.errors[0] }}</small>
+            {% endif %}
+        </div>
+
+        <div class="fadeIn third">
+            {{ form.confirm_password(class="form-control", placeholder="Confirm Password") }}
+            {% if form.confirm_password.errors %}
+                <small class="text-danger">{{ form.confirm_password.errors[0] }}</small>
+            {% endif %}
+        </div>
+
+        <input type="submit" class="fadeIn fourth btn btn-primary" value="Register">
+    </form>
+
+    <!-- Forgot Password -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
